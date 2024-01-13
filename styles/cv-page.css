@@ -41,9 +41,17 @@ body {
 }
 
 #cv-list {
-    width: 90%;
-    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 99%;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    padding: 10px;
     border-radius: 20px;
     margin: 20px auto;
-    background-color: #00ffea;
+    background-color: var(--shadow);
+    display: flex;
+    flex-flow: row wrap;
 }

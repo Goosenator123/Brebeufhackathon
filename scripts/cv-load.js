@@ -18,7 +18,9 @@ function stuff() {
     image.style.width = "100px"
     div.style.padding = "20px";
     div.style.display = "flex";
+    div.style.borderRadius = "20px";
     div.style.flexDirection = "row";
+    div.style.margin = "10px"
     div.style.justifyContent = "space-between";
     div.appendChild(name);
     div.appendChild(image);
@@ -28,4 +30,10 @@ function stuff() {
     div.style.height = "fit-content";
 }
 
-window.onload = stuff();
+function execute() {
+    for (let x = 1; x < 10; x++) {
+        stuff();
+    }
+}
+
+window.onload = execute();
