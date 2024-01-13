@@ -9,8 +9,8 @@ if (false && userId === null) redirectToLogin();
 
 // profile picture
 
-const image = 0;//fetch()
-document.getElementById('user-profile').src = image;
+// const image = fetch()
+// document.getElementById('user-profile').src = image;
 
 
 // cards
