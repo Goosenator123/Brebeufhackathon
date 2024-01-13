@@ -11,9 +11,9 @@ emailInput.addEventListener('input', () => {
 })
 
 loginRedirect.addEventListener('click', () => {
-    window.location.href = "html/login.html";
+    window.location.href = "login.html";
 })
 
 loginRedirect2.addEventListener('click', () => {
-    window.location.href = "html/login.html";
+    window.location.href = "login.html";
 })
