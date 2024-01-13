@@ -55,11 +55,11 @@ body {
 
 /* Styling for upper and footer dividers */
 .upper-divider {
-    background-image: url('../images/upper-divider.svg');
+    background-image: url('../svg/upper-divider.svg');
 }
 
 .footer-divider {
-    background-image: url('../images/footer-divider.svg');
+    background-image: url('../svg/footer-divider.svg');
 }
 
 /* Styling for a line divider */
