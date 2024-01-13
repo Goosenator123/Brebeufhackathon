@@ -1,15 +1,18 @@
+/* Variable declarations for color scheme */
 :root {
     --background-color: #232634;
     --upper-page-background: #5e28a6;
     --letter-color: #eff1f5;
-    --letter-color2: #9dd4ff;
+    --letter-color2: #00fff7;
     --nav-hover: #ca9ee6;
-    --button-background: #8839ef;
-    --button-bg-hover: #904bea;
-    --form-bg: #a96df2;
+    --button-background: #7e28ef;
+    --button-bg-hover: #7115e8;
+    --form-bg: #944deb;
     --shadow: #421c72;
+    --title-color: #00ffea;
 }
 
+/* Resetting default styles and setting global styles */
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -17,16 +20,31 @@
     letter-spacing: 1.15px;
 }
 
+/* Setting base font size for better responsiveness */
 html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
+/* Styling for the body */
 body {
     position: relative;
     background-color: var(--background-color);
 }
 
+/* Background image styling */
+.bg-img {
+    position: fixed;
+    z-index: -1;
+    background-image: url('./../img/5039684.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Spacer for visual appeal */
 .spacer {
     aspect-ratio: 960/200;
     width: 100%;
@@ -35,37 +53,54 @@ body {
     background-size: cover;
 }
 
+/* Styling for upper and footer dividers */
 .upper-divider {
-    background-image: url('./../svg/upper-layer-divider.svg');
+    background-image: url('./../svg/upper-divider.svg');
 }
 
 .footer-divider {
     background-image: url('./../svg/footer-divider.svg');
 }
 
+/* Styling for a line divider */
 .line-divider {
     width: 60%;
     border-bottom: 2px solid var(--letter-color);
-    margin: 2px auto;
+    margin: 0 auto;
 }
 
-/*! Upper Page Styles */
+/* Styling for body scrollbar */
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--upper-page-background);
+    border-radius: 10px;
+}
+
+/* Upper page styles */
 #upper-page {
     position: relative;
-    background-color: var(--upper-page-background);
     width: 100%;
     height: fit-content;
     padding-top: 30px;
 }
 
+/* Navigation bar styling */
 .nav-bar {
     position: relative;
 }
 
+/* Page name styling */
 #page-name {
     position: absolute;
     left: 150px;
-    color: var(--letter-color);
+    color: var(--title-color);
     font-weight: bold;
     font-size: 6rem;
     transition: color 0.2s;
@@ -77,6 +112,7 @@ body {
     color: var(--nav-hover);
 }
 
+/* Navigation link container styling */
 .nav-link-container {
     position: absolute;
     right: 150px;
@@ -85,6 +121,7 @@ body {
     justify-content: center;
 }
 
+/* Navigation link styling */
 .nav-link-container > li {
     list-style: none;
     margin-left: 60px;
@@ -103,7 +140,8 @@ body {
     border-bottom: 2px solid var(--nav-hover);
 }
 
-#sign-in-button {
+/* Sign-in button styling */
+.sign-in-button {
     border-radius: 20px;
     border: none;
     background-color: var(--button-background);
@@ -114,10 +152,11 @@ body {
     transition: background-color 0.2s;
 }
 
-#sign-in-button:hover {
+.sign-in-button:hover {
     background-color: var(--button-bg-hover);
 }
 
+/* Upper page article styling */
 #upper-page-article {
     width: 100%;
     margin: 200px auto 0 auto;
@@ -126,6 +165,7 @@ body {
     align-items: center;
 }
 
+/* Short info styling */
 #short-info {
     width: 30%;
     min-width: 500px;
@@ -147,6 +187,7 @@ body {
     color: var(--letter-color);
 }
 
+/* Form styling */
 form {
     width: 20%;
     min-width: 300px;
@@ -165,12 +206,14 @@ form > h1 {
     color: var(--letter-color);
 }
 
+/* Input position styling */
 .input-position {
     position: relative;
     margin-top: 50px;
     width: 100%;
 }
 
+/* Input box styling */
 .input-box {
     width: 100%;
     height: 2rem;
@@ -184,13 +227,15 @@ form > h1 {
     transition: border-bottom 0.5s, color 0.5s;
 }
 
+/* Input label styling */
 .input-label {
     position: absolute;
     top: -10px;
     font-size: 2.8rem;
     font-weight: bold;
     user-select: none;
-    color: white;    
+    color: var(--letter-color);
+    opacity: 0.9;
     display: flex;
     align-items: last baseline;
     transition: top 0.25s, font-size 0.3s, color 0.2s;
@@ -200,10 +245,12 @@ form > h1 {
 .input-box:valid + .input-label,
 .input-box.filled + .input-label {
     top: -30px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--letter-color2);
+    opacity: 0.8;
 }
 
+/* Sign-up button styling */
 #sign-up-button {
     width: fit-content;
     height: fit-content;
@@ -224,7 +271,12 @@ form > h1 {
     background-color: var(--button-bg-hover);
 }
 
-/*! Info styles */
+/* Info section styles */
+#info {
+    background-color: var(--background-color);
+}
+
+/* About us section styling */
 #about-us {
     width: 60%;
     margin: auto;
@@ -247,7 +299,7 @@ form > h1 {
     color: var(--letter-color);
 }
 
-/*! Footer styles */
+/* Footer styles */
 footer {
     background-color: var(--upper-page-background);
     width: 100%;
@@ -255,6 +307,7 @@ footer {
     text-align: center;
 }
 
+/* Social media links styling */
 #social-media-links > h1 {
     font-size: 4rem;
     color: var(--letter-color);
@@ -282,6 +335,7 @@ footer {
     border-radius: 100px;
 }
 
+/* Footer navigation link container styling */
 .footer-nav-link-container {
     width: 40%;
     margin: 30px auto;
@@ -296,6 +350,7 @@ footer {
     list-style: none;
 }
 
+/* Right container styling */
 #right-container {
     background-color: var(--shadow);
     font-size: 1.4rem;

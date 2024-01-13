@@ -8,6 +8,7 @@ function checkPassword() {
         alert("Passwords do not match!");
         return false;
     } else {
+        window.location.href = "www.youtube.com"
         return true;
     }
 }

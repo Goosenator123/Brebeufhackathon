@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Submit</title>
 
+    <!-- Linking external stylesheet -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Background image section -->
+    <div class="bg-img"></div>
+
+    <!-- Upper page section containing navigation and article -->
     <section id="upper-page">
+        <!-- Navigation bar -->
         <nav class="nav-bar">
+            <!-- Page name link -->
             <a id="page-name" href="#info">CV Submit</a>
 
+            <!-- Navigation links -->
             <ul class="nav-link-container">          
                 <li><a class="nav-link" href="#upper-page">Home</a></li>
                 <li><a class="nav-link" href="#info">About</a></li>
                 <li>
-                    <button id="sign-in-button">
+                    <button class="sign-in-button" id="sign-in-button">
                         Sign In
                     </button>
                 </li>        
             </ul>
         </nav>
 
+        <!-- Article section for upper page content -->
         <article id="upper-page-article">
+            <!-- Short information about CV Submit -->
             <div id="short-info">
                 <h2>
                     Submit your CVs &
@@ -32,11 +42,12 @@
                 </h2>
                 <br>
                 <p>
-                    CV Submit allows you to submit your CVs on a plateform where other users can visual it in order to improve job seeking.
+                    CV Submit allows you to submit your CVs on a platform where other users can visualize it to improve job seeking.
                 </p>
             </div>
 
-            <form method="post" onsubmit="return checkPassword()">
+            <!-- Form for user registration -->
+            <form onsubmit="return checkPassword()">
                 <h1>Sign Up</h1>
                 <div class="input-position">
                     <input type="text" class="input-box" id="username" required>
@@ -62,32 +73,40 @@
                         <label style="cursor:text;" for="confirm-password" class="placeholder">Confirm Password</label>
                     </div>
                 </div>
-
+                <!-- Button to submit registration form -->
                 <button id="sign-up-button">Register</button>
             </form>
         </article>
     </section>
 
+    <!-- Spacer and divider elements for visual separation -->
     <div class="spacer upper-divider"></div>
 
+    <!-- Info section containing about us content -->
     <section id="info">
+        <!-- Divider line -->
         <div class="line-divider"></div>
 
+        <!-- Article section about the website -->
         <article id="about-us">
             <h1>About Us</h1>
             <p>
-                words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words wordswords words words wordswords words words words words words words wordswords words words wordsv words words words wordswords words words words
+                words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words wordswords words words wordswords words words words words words words wordswords words words wordsv words words words wordswords words words words
             </p>
         </article>
+
+        <!-- Divider line -->
         <div class="line-divider"></div>
     </section>
 
+    <!-- Spacer and divider elements for visual separation -->
     <div class="spacer footer-divider"></div>
 
+    <!-- Footer section with social media links and navigation -->
     <footer>
+        <!-- Social media links and icons -->
         <div id="social-media-links">
             <h1>Follow Us</h1>
-            
             <ul>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" class="instagram">
@@ -112,22 +131,25 @@
             </ul>
         </div>
 
+        <!-- Navigation links in the footer -->
         <ul class="footer-nav-link-container">          
             <li><a class="nav-link" href="#upper-page">Home</a></li>
             <li><a class="nav-link" href="#info">About</a></li>
             <li>
-                <button id="sign-in-button">
+                <button class="sign-in-button" id="sign-in-button2">
                     Sign In
                 </button>
             </li>        
         </ul>
 
+        <!-- Right container with copyright information -->
         <div id="right-container">
             <p>&copy;Copyright 2023. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Script tags for JavaScript files -->
     <script src="./js/main.js"></script>
     <script src="./js/register.js" defer></script>
 </body>
-</html>
+</

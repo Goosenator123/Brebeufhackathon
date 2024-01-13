@@ -1,5 +1,6 @@
 const emailInput = document.getElementById("email");
-
+const loginRedirect = document.getElementById('sign-in-button');
+const loginRedirect2 = document.getElementById('sign-in-button2');
 
 emailInput.addEventListener('input', () => {
     if (emailInput.value.trim() !== "") {
@@ -7,4 +8,12 @@ emailInput.addEventListener('input', () => {
     } else {
         emailInput.classList.remove('filled');
     }
+})
+
+loginRedirect.addEventListener('click', () => {
+    window.location.href = "html/login.html";
+})
+
+loginRedirect2.addEventListener('click', () => {
+    window.location.href = "html/login.html";
 })
