@@ -18,6 +18,7 @@ function stuff() {
     image.style.width = "100px"
     div.style.padding = "20px";
     div.style.display = "flex";
+    div.style.borderRadius = "20px";
     div.style.flexDirection = "row";
     div.style.margin = "10px"
     div.style.justifyContent = "space-between";
