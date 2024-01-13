@@ -31,7 +31,7 @@ h1 {
 hr {
     margin: 0 .5rem 1rem .5rem;
     border: none;
-    border-top: 2px solid rgb(180 180 200);
+    border-top: 2px solid rgb(var(--light)/ .8);
 }
 
 #user-profile {
@@ -41,6 +41,7 @@ hr {
     border-radius: 100%;
     background: rgb(20 40 60);
 }
+
 
 #cards-container {
     margin: 1rem 2rem;
