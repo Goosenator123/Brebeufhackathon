@@ -5,63 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Submit</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <section id="upper-page">
         <nav class="nav-bar">
-            <h1 class="title" id="page-name">CV Submit</h1>
-            <a class="nav-link" href="#page-name">Home</a>
-            <a class="nav-link" href="#info">About</a>
-            <button id="sign-in-button">
-                Sign In
-            </button>
+            <a id="page-name" href="#info">CV Submit</a>
+
+            <ul class="nav-link-container">          
+                <li><a class="nav-link" href="#upper-page">Home</a></li>
+                <li><a class="nav-link" href="#info">About</a></li>
+                <li>
+                    <button id="sign-in-button">
+                        Sign In
+                    </button>
+                </li>        
+            </ul>
         </nav>
 
         <article id="upper-page-article">
             <div id="short-info">
-                <h2 class="title">
+                <h2>
                     Submit your CVs &
                     <br>
                     <span class="white">Seek wanted applicants</span>
                 </h2>
                 <br>
-                <p class="normal-text">
+                <p>
                     CV Submit allows you to submit your CVs on a plateform where other users can visual it in order to improve job seeking.
                 </p>
             </div>
-            <form action="" method="post">
-                <h1 style="text-align: center;" class="sub-title">Sign Up</h1>
+
+            <form method="post" onsubmit="return checkPassword()">
+                <h1>Sign Up</h1>
                 <div class="input-position">
-                    <input type="text" class="input-box" id="username">
+                    <input type="text" class="input-box" id="username" required>
                     <div class="input-label">
                         <label style="cursor:text;" for="username" class="placeholder">Username</label>
                     </div>
                 </div>
                 <div class="input-position">
-                    <input type="email" class="input-box" id="email">
+                    <input type="email" class="input-box" id="email" required>
                     <div class="input-label">
                         <label style="cursor:text;" for="email" class="placeholder">Email</label>
                     </div>
                 </div>
                 <div class="input-position">
-                    <input type="password" class="input-box" id="password">
+                    <input type="password" class="input-box" id="password" required>
                     <div class="input-label">
                         <label style="cursor:text;" for="password" class="placeholder">Password</label>
                     </div>
                 </div>
                 <div class="input-position">
-                    <input type="password" class="input-box" id="confirm-password">
+                    <input type="password" class="input-box" id="confirm-password" required>
                     <div class="input-label">
                         <label style="cursor:text;" for="confirm-password" class="placeholder">Confirm Password</label>
                     </div>
                 </div>
+
+                <button id="sign-up-button">Register</button>
             </form>
         </article>
     </section>
 
+    <div class="spacer upper-divider"></div>
+
     <section id="info">
-        sdfsdfsdf
+        <div class="line-divider"></div>
+
+        <article id="about-us">
+            <h1>About Us</h1>
+            <p>
+                words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words wordswords words words wordswords words words words words words words wordswords words words wordsv words words words wordswords words words words
+            </p>
+        </article>
+        <div class="line-divider"></div>
     </section>
+
+    <div class="spacer footer-divider"></div>
+
+    <footer>
+        <div id="social-media-links">
+            <h1>Follow Us</h1>
+            
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="instagram">
+                        <img src="./svg/insta-icon.svg" alt="Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" class="youtube">
+                        <img src="./svg/youtube-icon.svg" alt="Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" target="_blank" class="twittards">
+                        <img src="./svg/twittards-icon.svg" alt="Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.facebook.com" target="_blank" class="facebook">
+                        <img src="./svg/facebook-icon.svg" alt="Icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="footer-nav-link-container">          
+            <li><a class="nav-link" href="#upper-page">Home</a></li>
+            <li><a class="nav-link" href="#info">About</a></li>
+            <li>
+                <button id="sign-in-button">
+                    Sign In
+                </button>
+            </li>        
+        </ul>
+
+        <div id="right-container">
+            <p>&copy;Copyright 2023. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/register.js" defer></script>
 </body>
 </html>
